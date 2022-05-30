@@ -1,0 +1,16 @@
+<resources>
+    <!-- Label of App -->
+    <string name="app_name">Super Heroes of Marvel</string>
+
+    <!-- Fragment more info of the super hero -->
+    <string name="description">Description:</string>
+    <string name="sorry">Sorry!</string>
+    <string name="there_is_no_description_string">\nThere is no description \n \n Try with another one! </string>
+    <string name="isn_t_awesome">Isn´t awesome?!</string>
+    <string name="back_to_the_list_btn">Back to the List</string>
+
+
+    <!-- Fragment super hero list - usage: if the app can´t get the information for any reason -->
+    <string name="seems_like_you_dont_have_internet_connection">Oh! Seems like you don´t have internet connection…</string>
+
+</resources>

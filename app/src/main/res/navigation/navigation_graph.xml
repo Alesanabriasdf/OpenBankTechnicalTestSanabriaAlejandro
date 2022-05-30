@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragmentSuperHeroesList">
+
+    <fragment
+        android:id="@+id/fragmentSuperHeroesList"
+        android:name="com.example.openbanktechnicaltestsanabriaalejandro.view.fragments.FragmentSuperHeroesList"
+        android:label="fragment_super_heroes_list"
+        tools:layout="@layout/fragment_super_heroes_list" >
+
+        <action
+            android:id="@+id/action_fragmentSuperHeroesList_to_fragmentMoreInformationOfHero"
+            app:destination="@id/fragmentMoreInformationOfHero"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMoreInformationOfHero"
+        android:name="com.example.openbanktechnicaltestsanabriaalejandro.view.fragments.FragmentMoreInformationOfHero"
+        android:label="fragment_more_information_of_hero"
+        tools:layout="@layout/fragment_more_information_of_hero" >
+        <argument
+            android:name="descriptionOfSuperHero"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentMoreInformationOfHero_to_fragmentSuperHeroesList"
+            app:destination="@id/fragmentSuperHeroesList"
+            app:popUpTo="@id/fragmentSuperHeroesList"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
