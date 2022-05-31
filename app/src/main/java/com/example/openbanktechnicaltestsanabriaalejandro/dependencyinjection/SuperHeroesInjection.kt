@@ -1,4 +1,4 @@
-package com.example.openbanktechnicaltestsanabriaalejandro
+package com.example.openbanktechnicaltestsanabriaalejandro.dependencyinjection
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
