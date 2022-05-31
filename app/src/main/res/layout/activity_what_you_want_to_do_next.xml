@@ -6,39 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".view.WhatYouWantToDoNextActivity">
 
-
     <Button
         android:id="@+id/btnMoveBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/back_to_the_list_btn"
+        app:layout_constraintBottom_toTopOf="@+id/materialDivider"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="@string/back_to_the_list_btn"/>
+        app:layout_constraintVertical_bias="0.177" />
 
     <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnMoveBack"
-        app:layout_constraintTop_toBottomOf="@+id/btnMoveBack"/>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="@string/see_the_comics_s_hero"
-        android:id="@+id/btnToComics"/>
-
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMoveBack"
+        app:layout_constraintEnd_toStartOf="@+id/btnMoveBack"
+        app:layout_constraintTop_toTopOf="@+id/btnMoveBack"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
     <ImageView
         android:layout_width="90dp"
         android:layout_height="90dp"
-        app:srcCompat="@drawable/ic_baseline_menu_book_24"
+        app:layout_constraintBottom_toTopOf="@+id/materialDivider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMoveBack"
+        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnToComics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_the_comics_s_hero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialDivider"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btnToComics"
+        app:layout_constraintStart_toEndOf="@+id/btnToComics"
+        app:layout_constraintTop_toTopOf="@+id/btnToComics"
+        android:padding="5dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnToComics"
-        app:layout_constraintStart_toStartOf="@id/btnToComics"/>
+        app:srcCompat="@drawable/ic_baseline_menu_book_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

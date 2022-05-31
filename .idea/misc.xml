@@ -7,9 +7,10 @@
         <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/drawable/ic_baseline_arrow_circle_down_24.xml" value="0.115" />
         <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/drawable/ic_launcher_background.xml" value="0.115" />
         <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/layout/activity_main.xml" value="0.18596491228070175" />
-        <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/layout/activity_what_you_want_to_do_next.xml" value="0.2" />
+        <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/layout/activity_what_you_want_to_do_next.xml" value="0.4" />
         <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/layout/fragment_more_information_of_hero.xml" value="0.2532569046378322" />
         <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/layout/fragment_super_heroes_list.xml" value="0.2391102873030584" />
+        <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/layout/fragment_what_you_want_to_do_next.xml" value="0.23918707660239708" />
         <entry key="..\:/Users/54354/Desktop/OpenBankTechnicalTest/app/src/main/res/layout/view_for_all_heroes_list.xml" value="0.264" />
       </map>
     </option>
