@@ -7,10 +7,13 @@
     <string name="sorry">Sorry!</string>
     <string name="there_is_no_description_string">\nThere is no description \n \n Try with another one! </string>
     <string name="isn_t_awesome">Isn´t awesome?!</string>
-    <string name="back_to_the_list_btn">Back to the List</string>
-
-
-    <!-- Fragment super hero list - usage: if the app can´t get the information for any reason -->
+    <string name="what_you_want_to_do_next">what you want to do next?!</string>
+    
+    <!-- Usage: if the app can´t get the information for any reason -->
     <string name="seems_like_you_dont_have_internet_connection">Oh! Seems like you don´t have internet connection…</string>
+    
+    <!-- Activity to more or look for another SHero again -->
+    <string name="back_to_the_list_btn">Back to the List</string>
+    <string name="see_the_comics_s_hero">See the comics\'s hero</string>
 
 </resources>

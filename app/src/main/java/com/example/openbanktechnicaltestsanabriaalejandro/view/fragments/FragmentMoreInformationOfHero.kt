@@ -1,5 +1,6 @@
 package com.example.openbanktechnicaltestsanabriaalejandro.view.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
@@ -8,6 +9,7 @@ import androidx.fragment.app.activityViewModels
 import com.example.openbanktechnicaltestsanabriaalejandro.R
 import com.example.openbanktechnicaltestsanabriaalejandro.databinding.FragmentMoreInformationOfHeroBinding
 import com.example.openbanktechnicaltestsanabriaalejandro.view.MainActivity.Companion.prefs
+import com.example.openbanktechnicaltestsanabriaalejandro.view.WhatYouWantToDoNextActivity
 import com.example.openbanktechnicaltestsanabriaalejandro.viewmodel.SuperHeroDetailViewModel
 
 
@@ -50,6 +52,11 @@ class FragmentMoreInformationOfHero : Fragment(R.layout.fragment_more_informatio
 
         superHeroDescriptionViewModel.thereIsNoInternet.observe(viewLifecycleOwner) {
             binding.tvForError.isVisible = it
+        }
+
+        binding.btnNextScreen.setOnClickListener {
+            val intent = Intent(context, WhatYouWantToDoNextActivity::class.java)
+            context?.startActivity(intent)
         }
     }
 }
